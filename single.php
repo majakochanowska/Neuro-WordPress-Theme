@@ -48,27 +48,7 @@ the_post();
                 <div class="col-lg-9 mb-4">
 
                     <!-- Breadcrumbs -->
-                    <?php
-                    $categories = get_the_category();
-                    $first_category_name = $categories[0]->cat_name;
-                    $first_category_id = get_cat_ID( $category[0]->cat_name );
-                    $first_category_link = get_category_link( $category_id );
-                    ?>
-                    <ol class="breadcrumb white z-depth-1">
-                        <li class="breadcrumb-item">
-                            <a href="<?php echo get_home_url(); ?>">Home Page</a>
-                        </li>
-                        <?php
-                        if (count($categories)){
-                        ?>
-                        <li class="breadcrumb-item">
-                            <a href="<?php echo $first_category_link ?>"><?php echo $first_category_name ?></a>
-                        </li>
-                        <?php
-                        }
-                        ?>
-                        <li class="breadcrumb-item active"><?php the_title() ?></li>
-                    </ol>
+                    <?php get_template_part( 'template-parts/breadcrumb' ); ?>
                     <!-- Breadcrumbs -->
 
                     <!-- Featured image -->
@@ -138,7 +118,6 @@ the_post();
 
     </div>
 </main>
-...
 <!--Main layout-->
 <?php
 } // end while
