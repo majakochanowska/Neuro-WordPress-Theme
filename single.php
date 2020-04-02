@@ -45,7 +45,7 @@ the_post();
             <div class="row wow fadeIn">
 
                 <!--Grid column-->
-                <div class="col-md-8 mb-4">
+                <div class="col-lg-9 mb-4">
 
                     <!-- Breadcrumbs -->
                     <?php
@@ -102,7 +102,7 @@ the_post();
                 <!--Grid column-->
 
                 <!--Grid column-->
-                <div class="col-md-4 mb-4">
+                <div class="col-lg-3 mb-4">
 
                     <!-- Sticky content -->
                     <div class="sticky">

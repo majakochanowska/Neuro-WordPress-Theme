@@ -12,7 +12,7 @@
             <!--Section: Dynamic Content Wrapper-->
 
             <!--Section: Articles-->
-            <section class="text-center">
+            <section>
 
                 <!--Section heading-->
                 <h1 class="h2 font-weight-bold my-4">Recent articles</h1>
@@ -20,56 +20,70 @@
                 <!--Grid row-->
                 <div class="row wow fadeIn">
 
-                    <?php
-                    if ( have_posts() ) {
-                    $counter = 1;
-                    while ( have_posts() ) {
-                    the_post();
-                    ?>
-
-                        <!--Grid column-->
-                        <div class="col-lg-4 col-md-12 mb-4">
+                        <!--Articles column-->
+                        <div class="col-lg-9 mb-4">
+                            <?php
+                            if ( have_posts() ) {
+                                while ( have_posts() ) {
+                                the_post();
+                            ?>
                             <!--Featured image-->
-                            <div class="view overlay hm-white-slight rounded z-depth-2 mb-4">
-                                <?php the_post_thumbnail( 'medium-large', array( 'class'=> 'img-fluid')); ?>
-                                <a href="<?php echo get_permalink() ?>">
-                                    <div class="mask"></div>
-                                </a>
+                            <div class="row hm-white-slight rounded z-depth-2 mb-4">
+                            <div class="col-sm-4">
+                                <div class="mb-3 mt-3">
+                                    <?php the_post_thumbnail( 'medium-large', array( 'class'=> 'img-fluid')); ?>
+                                </div>
                             </div>
 
                             <!--Excerpt-->
-                            <a href="" class="pink-text">
-                                <h6 class="mb-3 mt-4">
-                                    <i class="fa fa-bolt"></i>
-                                    <strong> <?php the_category(', '); ?></strong>
-                                </h6>
-                            </a>
-                            <h4 class="mb-3 font-weight-bold dark-grey-text">
-                                <strong><?php the_title(); ?></strong>
-                            </h4>
-                            <p>by
-                                <a href="<?php echo get_permalink() ?>" class="font-weight-bold dark-grey-text"><?php echo get_the_author(); ?></a>, <?php echo get_the_date(); ?></p>
-                            <p class="grey-text"><?php the_excerpt(); ?></p>
-                            <a href="<?php echo get_permalink() ?>" class="btn btn-info btn-rounded btn-md">Read more</a>
+                            <div class="col-sm-8">
+                                <h4 class="mb-3 mt-3 font-weight-bold">
+                                    <a href="<?php echo get_permalink() ?>"><?php the_title(); ?></a>
+                                </h4>
+                                <p><?php the_category(', '); ?>, <?php echo get_the_date(); ?></p>
+                                <p class="grey-text"><?php the_excerpt(); ?></p>
+                                <a href="<?php echo get_permalink() ?>" class="btn btn-info btn-rounded btn-md mb-3">Read more</a>
+                                </div>
+                            </div>
+                            
+                            <?php
+                            } // end while
+                            } // end if
+                            ?>
                         </div>
-                        <!--Grid column-->
+                        <!-- /.Articles column-->
+                        <!-- Sidebar column -->
+                        <div class="col-lg-3 mb-4">
 
-                    <?php
-                    if ($counter % 3 == 0) {
-                    ?>
-                    </div>
-                    <!--Grid row-->
-                    <!--Grid dynamic row-->
-                    <div class="row wow fadeIn">
-                    <?php
-                    }
-                    $counter++;
-                    } // end while
-                    } // end if
-                    ?>
+                            <!-- Sticky content -->
+                            <div class="sticky">
+                                <!--Section: Dynamic Content Wrapper-->
+                                <section>
+                                <div id="dynamic-content"></div>
+
+                                </section>
+                                <!--Section: Dynamic Content Wrapper-->
+
+                                <!--Card-->
+                                <div class="card mb-4">
+                                    <!--Sidebar-->
+                                    <?php if ( is_active_sidebar( 'sidebar' ) ) : ?>
+                                        <?php dynamic_sidebar( 'sidebar' ); ?>
+                                        <?php endif; ?>
+                                    <!--/.Sidebar-->
+
+                                </div>
+                                <!--/.Card-->
+
+                            </div>
+                            <!-- Sticky content -->
+
+                        </div>
+                        <!-- /.Sidebar column -->
 
                 </div>
-                <!--Grid row-->
+                <!-- /.Grid row-->
+
 
                 <!--Pagination -->
                 <?php mdb_pagination(); ?>
