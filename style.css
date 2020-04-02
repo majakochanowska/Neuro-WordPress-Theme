@@ -1,0 +1,41 @@
+/*
+Theme Name: neuro
+Theme URI: https://neuroskoki.pl
+Version: 1.0.0.
+Author: Maja Kochanowska
+Author URI: https://github.com/majakochanowska
+*/
+.page-footer {
+  background-color: #114A7C;
+}
+
+.blue-gradient {
+  background: -webkit-linear-gradient(50deg, #45cafc, #303f9f) !important;
+  background: -o-linear-gradient(50deg, #45cafc, #303f9f) !important;
+  background: linear-gradient(40deg, #45cafc, #303f9f) !important;
+}
+
+.card-comments img {
+  width: 4rem;
+}
+
+.card-intro {
+  margin-top: 67px;
+}
+
+.card-intro .card-body {
+  -webkit-border-radius: 0 !important;
+  border-radius: 0 !important;
+}
+
+.navbar-brand img {
+  height: 20px;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: #09c;
+}
+
+.card-avatar img {
+  width: 100px;
+}
