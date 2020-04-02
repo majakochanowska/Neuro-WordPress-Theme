@@ -1,3 +1,7 @@
+WordPress Theme which will be used for website https://neuroskoki.pl
+
+____
+
 Material Design for Bootstrap
 Version: MDB FREE 4.15.0
 
