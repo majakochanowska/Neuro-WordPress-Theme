@@ -34,7 +34,7 @@
         </h4>
         <p><?php the_category(', '); ?>, <?php echo get_the_date(); ?></p>
         <p class="grey-text"><?php the_excerpt(); ?></p>
-        <a href="<?php echo get_permalink() ?>" class="btn btn-info btn-rounded btn-md mb-3">Read more</a>
+        <a href="<?php echo get_permalink() ?>" class="btn btn-info btn-rounded btn-md mb-3"><?php _e('Czytaj więcej', 'neuro')?></a>
         </div>
     </div>
     
