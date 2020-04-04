@@ -41,8 +41,8 @@ function neuro_init() {
       'id'            => 'sidebar',
       'before_widget' => '',
       'after_widget'  => '',
-      'before_title'  => '',
-      'after_title'   => '',
+      'before_title'  => '<div class="bg-primary px-3 py-1 my-1 text-white">',
+      'after_title'   => '</div>',
     ) );
   
   }

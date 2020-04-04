@@ -81,34 +81,9 @@ the_post();
                 </div>
                 <!--Grid column-->
 
-                <!--Grid column-->
-                <div class="col-lg-3 mb-4">
-
-                    <!-- Sticky content -->
-                    <div class="sticky">
-                        <!--Section: Dynamic Content Wrapper-->
-                        <section>
-                          <div id="dynamic-content"></div>
-
-                        </section>
-                        <!--Section: Dynamic Content Wrapper-->
-
-                        <!--Card-->
-                        <div class="card mb-4">
-                            <!--Sidebar-->
-                            <?php if ( is_active_sidebar( 'sidebar' ) ) : ?>
-                                <?php dynamic_sidebar( 'sidebar' ); ?>
-                                <?php endif; ?>
-                            <!--/.Sidebar-->
-
-                        </div>
-                        <!--/.Card-->
-
-                    </div>
-                    <!-- Sticky content -->
-
-                </div>
-                <!--Grid column-->
+                <!--Sidebar column-->
+                <?php get_template_part( 'template-parts/right-sidebar' ) ?>
+                <!--/.Sidebar column-->
 
             </div>
             <!--Grid row-->

@@ -6,6 +6,10 @@ Author: Maja Kochanowska
 Author URI: https://github.com/majakochanowska
 */
 
+ul {
+  padding-left: 25px
+}
+
 .page-footer {
     background-color: #114A7C; }
   
@@ -38,4 +42,18 @@ Author URI: https://github.com/majakochanowska
 
 .btn-search {
   border: 0
+}
+
+.lang-item {
+  list-style-type: none;
+}
+
+.lang-item-first {
+  margin-top: 1em;
+}
+
+#recentcomments {
+  list-style-type: circle;
+  font-size: 0.95em;
+  margin-right: 10px;
 }
