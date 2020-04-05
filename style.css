@@ -65,3 +65,7 @@ ul {
   font-size: 0.95em;
   margin-right: 10px;
 }
+
+.post-thumbnail {
+  float: left;
+}
