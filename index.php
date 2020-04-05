@@ -19,7 +19,7 @@
                     ?>
                 <div class="col">
                     <div class="my-3">
-                        <?php the_post_thumbnail( 'medium-large', array( 'class'=> 'img-fluid')); ?>
+                        <?php the_post_thumbnail( 'medium-xxl', array( 'class'=> 'img-fluid')); ?>
                     </div>
                     <h3 class="h5-responsive my-3">
                         <a href="<?php echo get_permalink() ?>"><?php the_title(); ?></a>

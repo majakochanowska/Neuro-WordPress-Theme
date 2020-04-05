@@ -22,14 +22,17 @@
     <!--Featured image-->
     <div class="row hm-white-slight rounded z-depth-2 mb-4">
     <div class="col-sm-4">
-        <div class="mb-3 mt-3">
-            <?php the_post_thumbnail( 'medium-large', array( 'class'=> 'img-fluid')); ?>
+        <div class="my-3 d-none d-sm-block">
+            <?php the_post_thumbnail( 'medium', array( 'class'=> 'img-fluid')); ?>
+        </div>
+        <div class="my-3 d-xs-block d-sm-none">
+            <?php the_post_thumbnail( 'medium-xxl', array( 'class'=> 'img-fluid')); ?>
         </div>
     </div>
 
     <!--Excerpt-->
     <div class="col-sm-8">
-        <h4 class="mb-3 mt-3 font-weight-bold">
+        <h4 class="my-3 font-weight-bold">
             <a href="<?php echo get_permalink() ?>"><?php the_title(); ?></a>
         </h4>
         <p><?php the_category(', '); ?>, <?php echo get_the_date(); ?></p>

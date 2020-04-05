@@ -27,13 +27,16 @@ the_post();
                         <!--Card content-->
                         <div class="card-body">
                             <h2 class="font-weight-bold mb-4"><?php the_title() ?></h2>
-                            <div class="post-content">
+                            <div class="d-sm-block d-md-none">
+                                <?php the_post_thumbnail( 'medium-xl', array( 'class'=> 'img-fluid z-depth-1-half mb-3 mr-3 post-thumbnail')); ?>
+                            </div>
+                            <div class="d-none d-md-block">
                                 <?php the_post_thumbnail( 'medium', array( 'class'=> 'img-fluid z-depth-1-half mb-3 mr-3 post-thumbnail')); ?>
+                            </div>
                                 <p><?php echo get_the_date(); ?></p>
                                 <?php the_content(); ?>
 
                                 <p>Autor: <a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ), get_the_author_meta( 'user_nicename' ) ); ?>"><?php the_author(); ?></a></p>
-                            </div>
 
                         </div>
 

@@ -28,6 +28,8 @@ add_action( 'wp_enqueue_scripts', 'theme_enqueue_scripts' );
 function neuro_setup() {
     // Add featured image support
     add_theme_support('post-thumbnails');
+    add_image_size( 'medium-xl', 486, 324, false );
+    add_image_size( 'medium-xxl', 525, 350, false );
 }
 add_action('after_setup_theme', 'neuro_setup');
 
