@@ -61,3 +61,32 @@ ul {
 .post-thumbnail {
   float: left
 }
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 556px
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 748px
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 972px
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1180px
+  }
+}
+
+
+
+
+
