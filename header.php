@@ -14,7 +14,7 @@
     <header class="site-header">
         <div class="container">
             <div class="row align-items-center my-2">
-                <div class="col-xs-2 ml-1"><a href="<?php bloginfo('url')?>"><img src="http://127.0.0.1/neuroskoki2/wp-content/uploads/2020/04/logo-neuroskoki.png" width="80"></a></div>
+                <div class="col-xs-2 ml-1"><a href="<?php bloginfo('url')?>"><?php the_custom_logo() ?></a></div>
                 <div class="col-xs-10"><h1 class="main-title font-weight-lighter ml-3 cyan-text"><?php bloginfo( 'description' )?></h1></div>
             </div> 
         </div>
