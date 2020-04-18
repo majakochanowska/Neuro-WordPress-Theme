@@ -68,9 +68,27 @@ require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
 
 function neuro_custom_logo_setup() {
 
-  add_theme_support( 'custom-logo', array('width' => 80, 'height' => auto) );
+  add_theme_support( 'custom-logo', array('width' => 80, 'height' => 'auto') );
  }
  add_action( 'after_setup_theme', 'neuro_custom_logo_setup' );
+
+/**
+ * Pagination
+ */
+
+function neuro_number_pagination() {
+  global $wp_query;
+  $pagination = paginate_links( array(
+    'mid_size' => 3,
+  ));
+
+  $search = array('prev page-numbers', 'next page-numbers', 'page-numbers dots', 'page-numbers' );
+  $replace = array('btn btn-info btn-rounded btn-md waves-effect waves-light', 'btn btn-info btn-rounded btn-md waves-effect waves-light', 'badge badge-light pagination-num', 'btn btn-info btn-rounded waves-effect waves-light pagination-num' );
+
+  echo str_replace( $search, $replace, $pagination);
+
+};
+
 
 ?>
 

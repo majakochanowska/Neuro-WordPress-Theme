@@ -43,6 +43,9 @@
     
     <?php
     } // end while
+    ?>
+    <nav class="d-block text-center"><?php neuro_number_pagination(); ?></nav>
+    <?php
     } // end if
     ?>
 </div>
@@ -53,7 +56,3 @@
 
 </div>
 <!-- /.Grid row-->
-
-
-<!--Pagination -->
-<?php mdb_pagination(); ?>
