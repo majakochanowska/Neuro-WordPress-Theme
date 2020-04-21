@@ -36,9 +36,30 @@ the_post();
                                 <p><?php echo get_the_date(); ?></p>
                                 <?php the_content(); ?>
 
-                                <p>Autor: <a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ), get_the_author_meta( 'user_nicename' ) ); ?>"><?php the_author(); ?></a></p>
+                                <p><?php _e('Autor', 'neuro')?>: <a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ), get_the_author_meta( 'user_nicename' ) ); ?>"><?php the_author(); ?></a></p>
 
                         </div>
+
+                        <?php 
+                            $related = neuro_get_related_posts( get_the_ID(), 4 );
+
+                            if( $related->have_posts() ) {
+                        ?>
+                            <div class="card-body">
+                                <h3><?php _e('Może cię też zainteresować', 'neuro')?></h3>
+                                <div class="row">
+                                    <?php while( $related->have_posts() ): $related->the_post(); ?>
+                                    <div class="col-md-3 col-6">
+                                        <div><?php the_post_thumbnail( 'medium', array( 'class'=> 'img-fluid mb-1 post-thumbnail')); ?></div>
+                                        <div><a href="<?php echo get_permalink() ?>"><?php the_title(); ?></a></div>
+                                    </div>
+                                    <?php endwhile; ?>
+                                </div>
+                            </div>
+                        <?php 
+                            } // end if
+                            wp_reset_postdata();
+                        ?>
 
                     </div>
                     <!--/.Card-->
