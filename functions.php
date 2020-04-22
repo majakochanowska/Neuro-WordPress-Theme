@@ -1,11 +1,6 @@
 <?php
 
 /**
- * Include external files
- */
-require_once('inc/template-tags.inc.php');
-
-/**
  * Include CSS and JS files
  */
 function neuro_enqueue_scripts() {
