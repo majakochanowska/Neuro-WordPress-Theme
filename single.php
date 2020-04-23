@@ -12,7 +12,7 @@ the_post();
         <section class="mt-3">
 
             <!--Grid row-->
-            <div class="row wow fadeIn">
+            <div class="row">
 
                 <!--Grid column-->
                 <div class="col-lg-9 mb-4">
@@ -26,14 +26,14 @@ the_post();
 
                         <!--Card content-->
                         <div class="card-body">
-                            <h2 class="font-weight-bold mb-4"><?php the_title() ?></h2>
+                            <h2 class="mb-4"><?php the_title() ?></h2>
                             <div class="d-sm-block d-md-none">
-                                <?php the_post_thumbnail( 'medium-xl', array( 'class'=> 'img-fluid z-depth-1-half mb-3 mr-3 post-thumbnail')); ?>
+                                <?php the_post_thumbnail( 'medium-xl', array( 'class'=> 'img-fluid z-depth-1 mb-3 mr-3 post-thumbnail')); ?>
                             </div>
                             <div class="d-none d-md-block">
-                                <?php the_post_thumbnail( 'medium', array( 'class'=> 'img-fluid z-depth-1-half mb-3 mr-3 post-thumbnail')); ?>
+                                <?php the_post_thumbnail( 'medium', array( 'class'=> 'img-fluid z-depth-1 mr-3 post-thumbnail')); ?>
                             </div>
-                                <p><?php echo get_the_date(); ?></p>
+                                <p class="meta-info"><?php echo get_the_date(); ?></p>
                                 <?php the_content(); ?>
 
                                 <p><?php _e('Autor', 'neuro')?>: <a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ), get_the_author_meta( 'user_nicename' ) ); ?>"><?php the_author(); ?></a></p>
@@ -45,13 +45,15 @@ the_post();
 
                             if( $related->have_posts() ) {
                         ?>
+                            
+                            <h3 class="bg-primary text-white related-header"><?php _e('Może cię też zainteresować', 'neuro')?></h3>
                             <div class="card-body">
-                                <h3><?php _e('Może cię też zainteresować', 'neuro')?></h3>
+                                
                                 <div class="row">
                                     <?php while( $related->have_posts() ): $related->the_post(); ?>
                                     <div class="col-md-3 col-6">
-                                        <div><?php the_post_thumbnail( 'medium', array( 'class'=> 'img-fluid mb-1 post-thumbnail')); ?></div>
-                                        <div><a href="<?php echo get_permalink() ?>"><?php the_title(); ?></a></div>
+                                        <div><?php the_post_thumbnail( 'medium', array( 'class'=> 'img-fluid mb-1 post-thumbnail related-thumbnail')); ?></div>
+                                        <h4 class="related-title"><a href="<?php echo get_permalink() ?>"><?php the_title(); ?></a></h4>
                                     </div>
                                     <?php endwhile; ?>
                                 </div>

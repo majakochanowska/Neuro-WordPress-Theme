@@ -15,7 +15,7 @@
             <section>
 
                 <!--Section heading-->
-                <h1 class="h2 font-weight-bold my-4">
+                <h2 class="my-4">
                 <?php
                     if ( is_category() ) {
                         single_cat_title( 'Kategoria: ' );
@@ -29,7 +29,7 @@
                         echo 'Archiwum: ';
                     }
                     ?>
-                </h1>
+                </h2>
 
                 <?php get_template_part( 'template-parts/posts-list' ); ?>
 

@@ -15,7 +15,7 @@
             <section>
 
                 <!--Section heading-->
-                <h1 class="h2 font-weight-bold my-4"><?php _e('Wyniki wyszukiwania dla hasła', 'neuro')?>: "<?php the_search_query(); ?>"</h1>
+                <h2 class="my-4"><?php _e('Wyniki wyszukiwania dla hasła', 'neuro')?>: "<?php the_search_query(); ?>"</h2>
 
                 <?php get_template_part( 'template-parts/posts-list' ); ?>
 

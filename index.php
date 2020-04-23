@@ -9,7 +9,7 @@
 
                 <h2 class="my-4"><?php _e('Polecam w tym miesiącu', 'neuro')?></h2>
 
-                <div class="row hm-white-slight rounded z-depth-1">
+                <div class="row rounded z-depth-2">
 
                 <?php
                     $recommended = new WP_Query( ['category_name' => 'polecane'] );
@@ -19,9 +19,10 @@
                     ?>
                 <div class="col">
                     <div class="my-3">
-                        <?php the_post_thumbnail( 'medium-xxl', array( 'class'=> 'img-fluid')); ?>
+                        <?php the_post_thumbnail( 'medium-xxl', array( 'class'=> 'img-fluid z-depth-1')); ?>
                     </div>
-                    <h3 class="h5-responsive my-3">
+                    <p class="meta-info"><?php the_category(', '); ?>, <?php echo get_the_date(); ?></p>
+                    <h3 class="my-3 recommended-title">
                         <a href="<?php echo get_permalink() ?>"><?php the_title(); ?></a>
                     </h3>
                 </div>
