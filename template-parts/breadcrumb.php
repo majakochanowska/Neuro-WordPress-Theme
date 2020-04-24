@@ -11,16 +11,18 @@
 
 <ol class="breadcrumb white z-depth-1">
     <li class="breadcrumb-item">
-        <a href="<?php echo get_home_url(); ?>">Home Page</a>
+        <a href="<?php echo get_home_url(); ?>">Home</a>
     </li>
         <?php
         $categories = get_the_category();
-        $output     = '';
-        $comma      = '';
+        $output = '';
+        $separator = '';
         
         if ( $categories ) {
             foreach ( $categories as $category ) {
-                $output .= '<li class="breadcrumb-item"><a href="' . get_category_link( $category->term_id ) . '">' . $category->cat_name . '</a></li>' . $comma;
+                if ($category->term_id != 599 && $category->term_id != 601) {
+                    $output .= '<li class="breadcrumb-item"><a href="' . get_category_link( $category->term_id ) . '">' . $category->cat_name . '</a></li>' . $separator;
+                }
             }
             echo trim( $output );
         } ?>

@@ -21,7 +21,7 @@
                     <div class="my-3">
                         <?php the_post_thumbnail( 'medium-xxl', array( 'class'=> 'img-fluid z-depth-1')); ?>
                     </div>
-                    <p class="meta-info"><?php the_category(', '); ?>, <?php echo get_the_date(); ?></p>
+                    <p class="meta-info"><?php echo neuro_categories() ?>, <?php echo get_the_date(); ?></p>
                     <h3 class="my-3 recommended-title">
                         <a href="<?php echo get_permalink() ?>"><?php the_title(); ?></a>
                     </h3>

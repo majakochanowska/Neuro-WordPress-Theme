@@ -113,5 +113,24 @@ function neuro_get_related_posts( $post_id, $related_count, $args = array() ) {
 	return new WP_Query( $related_args );
 }
 
+/**
+ * Categories without "recommended"
+ */
+
+function neuro_categories() {
+  $categories = get_the_category();
+  $output = '';
+  $separator = ', ';
+        
+  if ( $categories ) {
+      foreach ( $categories as $category ) {
+          if ($category->term_id != 599 && $category->term_id != 601) {
+              $output .= '<a href="' . get_category_link( $category->term_id ) . '">' . $category->cat_name . '</a>' . $separator;
+          }
+      }
+      echo trim( $output, $separator );
+  }
+}
+
 ?>
 
