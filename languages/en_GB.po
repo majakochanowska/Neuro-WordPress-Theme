@@ -1,0 +1,92 @@
+# Blank WordPress Pot
+# Copyright 2014 ...
+# This file is distributed under the GNU General Public License v3 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: neuro\n"
+"Report-Msgid-Bugs-To: Translator Name <translations@example.com>\n"
+"POT-Creation-Date: 2020-04-25 20:47+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: Maja Kochanowska\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Textdomain-Support: yesX-Generator: Poedit 1.6.4\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;esc_html_e;esc_html_x:1,2c;esc_html__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_attr__;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;"
+"_x:1,2c;_n:1,2;_n_noop:1,2;__ngettext:1,2;__ngettext_noop:1,2;_c,_nc:4c,1,2\n"
+"X-Poedit-Basepath: ../\n"
+"X-Generator: Poedit 1.5.7\n"
+"Language: en_GB\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: class-wp-bootstrap-navwalker.php:365
+msgid "Add a menu"
+msgstr ""
+
+#: comments.php:28
+msgid "Komentarze"
+msgstr "Comments"
+
+#: comments.php:50
+msgid "Imię"
+msgstr "Name"
+
+#: comments.php:55
+msgid "Email"
+msgstr "Email"
+
+#: comments.php:60
+msgid "Strona www"
+msgstr "Website"
+
+#: comments.php:73 comments.php:85
+msgid "Twój komentarz"
+msgstr "Your comment"
+
+#: comments.php:91
+#, php-format
+msgid ""
+"Zalogowany jako <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Wyloguj"
+"\">Wyloguj</a>"
+msgstr ""
+"Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Logout"
+"\">Log out</a>"
+
+#: comments.php:104
+msgid "Dodaj komentarz"
+msgstr "Add comment"
+
+#: functions.php:52
+msgid "Primary Menu"
+msgstr ""
+
+#: index.php:10
+msgid "Polecam w tym miesiącu"
+msgstr "Recommended in this month"
+
+#: index.php:42
+msgid "Najnowsze artykuły"
+msgstr "Newest posts"
+
+#: search.php:10
+msgid "Wyniki wyszukiwania dla hasła"
+msgstr "Search results for"
+
+#: searchform.php:2 searchform.php:3
+msgid "Wpisz czego szukasz"
+msgstr "Search"
+
+#: single.php:39
+msgid "Autor"
+msgstr "Author"
+
+#: single.php:49
+msgid "Może cię też zainteresować"
+msgstr "You may also like"
+
+#: template-parts/posts-list.php:41
+msgid "Czytaj więcej"
+msgstr "Read more"

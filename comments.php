@@ -70,7 +70,7 @@
                     <div class="col-sm-10 col-12">
 
                         <div class="form-group">
-                            <label for="comment">Twój komentarz</label>
+                            <label for="comment">' . __( 'Twój komentarz', 'neuro' ) . '</label>
                             <textarea id="comment" name="comment" type="text"  class="form-control" rows="5"></textarea>
                         </div>
 

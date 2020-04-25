@@ -132,5 +132,14 @@ function neuro_categories() {
   }
 }
 
+/**
+ * Internationalization
+ */
+
+function neuro_load_theme_textdomain() {
+  load_theme_textdomain( 'neuro', get_template_directory() . '/languages' );
+}
+add_action( 'after_setup_theme', 'neuro_load_theme_textdomain' );
+
 ?>
 
