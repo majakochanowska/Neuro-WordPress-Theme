@@ -18,6 +18,8 @@ h2 {
 
 h3 {
   font-size: 1.4rem;
+  border-bottom: 1px solid #71b5fd;
+  width: max-content;
 }
 
 h4 {
@@ -165,5 +167,12 @@ strong {
 @media (min-width: 1200px) {
   .container {
     max-width: 1180px;
+  }
+}
+
+/* Don't show border in IE, because it doesn't understand "max-content" */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	h3 { 
+    border-bottom: none; 
   }
 }
