@@ -24,15 +24,13 @@
 
         <?php if ( have_comments() ) : ?>
 
-            <div class="card card-comments mb-3 wow fadeIn">
-                <div class="card-header font-weight-bold">
-                    <?php _e('Komentarze', 'neuro')?>
-                </div>
+            <div class="card mb-3">
+                <h4 class="card-header"><?php _e('Komentarze', 'neuro')?></h4>
 
                 <div class="card-body">
                     <?php
                         wp_list_comments( array( 
-                            'max-depth' => '2',
+                            'max-depth' => '3',
                             'type' => 'comment'
                         ) );
                     ?>
@@ -102,8 +100,8 @@
         );
         ?>
         <!--Leave a reply section-->
-        <div class="card mb-3 wow fadeIn">
-            <div class="card-header font-weight-bold"><?php _e('Dodaj komentarz', 'neuro')?></div>
+        <div class="card mb-3">
+            <h4 class="card-header"><?php _e('Dodaj komentarz', 'neuro')?></h4>
             <div class="card-body">
 
                 <?php comment_form($args ); ?>

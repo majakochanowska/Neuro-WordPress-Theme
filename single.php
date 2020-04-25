@@ -46,14 +46,14 @@ the_post();
                             if( $related->have_posts() ) {
                         ?>
                             
-                            <h3 class="bg-primary text-white related-header"><?php _e('Może cię też zainteresować', 'neuro')?></h3>
+                            <h4 class="bg-primary text-white related-header"><?php _e('Może cię też zainteresować', 'neuro')?></h4>
                             <div class="card-body">
                                 
                                 <div class="row">
                                     <?php while( $related->have_posts() ): $related->the_post(); ?>
                                     <div class="col-md-3 col-6">
                                         <div><?php the_post_thumbnail( 'medium', array( 'class'=> 'img-fluid mb-1 post-thumbnail related-thumbnail')); ?></div>
-                                        <h4 class="related-title"><a href="<?php echo get_permalink() ?>"><?php the_title(); ?></a></h4>
+                                        <h5 class="related-title"><a href="<?php echo get_permalink() ?>"><?php the_title(); ?></a></h5>
                                     </div>
                                     <?php endwhile; ?>
                                 </div>
