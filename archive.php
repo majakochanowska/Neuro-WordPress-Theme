@@ -4,17 +4,9 @@
     <main>
         <div class="container">
 
-            <!--Section: Dynamic Content Wrapper-->
-            <section>
-              <div id="dynamic-content"></div>
-
-            </section>
-            <!--Section: Dynamic Content Wrapper-->
-
             <!--Section: Articles-->
             <section>
 
-                <!--Section heading-->
                 <h2 class="my-4">
                 <?php
                     if ( is_category() ) {
@@ -39,6 +31,5 @@
         </div>
     </main>
     <!--Main layout-->
-
 
 <?php  get_footer(); ?>

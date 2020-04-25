@@ -7,7 +7,7 @@
             <!--Section: Recommended articles-->
             <section>
 
-                <h2 class="my-4"><?php _e('Polecam w tym miesiącu', 'neuro')?></h2>
+                <h2 class="my-4 main-heading"><?php _e('Polecam w tym miesiącu', 'neuro')?></h2>
 
                 <div class="row rounded z-depth-2">
 

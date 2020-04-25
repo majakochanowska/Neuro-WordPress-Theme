@@ -21,7 +21,7 @@
         ?>
 
         <div class="row rounded z-depth-2 mb-4">
-        <!--Featured image-->
+            <!--Featured image-->
             <div class="col-sm-4">
                 <div class="my-3 d-none d-sm-block">
                     <?php the_post_thumbnail( 'medium', array( 'class'=> 'img-fluid z-depth-1')); ?>

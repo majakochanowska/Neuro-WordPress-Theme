@@ -5,10 +5,15 @@ Version: 1.0.0.
 Author: Maja Kochanowska
 Author URI: https://github.com/majakochanowska
 */
+
+h1 {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 1rem;
+}
+
 h2 {
   font-family: 'Merriweather Sans', sans-serif;
-  font-size: 1.4rem;
-  text-transform: uppercase;
+  font-size: 1.5rem;
 }
 
 h3 {
@@ -27,6 +32,11 @@ strong {
   font-weight: bold;
 }
 
+.main-heading {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+
 .recommended-title {
   font-size: 1.3rem;
 }
@@ -37,11 +47,7 @@ strong {
 }
 
 .nav-link {
-  letter-spacing: 0.02em;
-}
-
-.main-title {
-  font-size: 1em;
+  letter-spacing: 0.02rem;
 }
 
 .post-thumbnail {
@@ -51,6 +57,7 @@ strong {
 /**
  * Search form
  */
+
 .btn-search {
   border: 0;
 }
@@ -62,6 +69,7 @@ strong {
 /**
  * Related articles
  */
+
 .related-header {
   padding: 0.4rem 1.25rem;
   font-size: 1.2rem;
@@ -81,23 +89,25 @@ strong {
 /**
  * Sidebar
  */
+
 .lang-item {
   list-style-type: none;
 }
 
 .lang-item-first {
-  margin-top: 1em;
+  margin-top: 1rem;
 }
 
 #recentcomments {
   list-style-type: circle;
-  font-size: 0.95em;
+  font-size: 0.95rem;
   margin-right: 10px;
 }
 
 /**
  * Pagination
  */
+
 .pagination-num {
   padding: 0.6rem;
   font-size: 0.6rem;
@@ -110,6 +120,7 @@ strong {
 /**
  * Comments
  */
+
 .comment {
   list-style-type: none;
 }
