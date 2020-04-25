@@ -39,8 +39,13 @@ strong {
   text-transform: uppercase;
 }
 
+.recommended-title, .newest-title {
+  border-bottom: none;
+  width: auto;
+}
+
 .recommended-title {
-  font-size: 1.3rem;
+  font-size: 1.25rem;
 }
 
 .meta-info {

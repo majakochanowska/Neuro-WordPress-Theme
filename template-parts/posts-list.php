@@ -33,7 +33,7 @@
 
             <!--Excerpt-->
             <div class="col-sm-8">
-                <h3 class="my-3">
+                <h3 class="my-3 newest-title">
                     <a href="<?php echo get_permalink() ?>"><?php the_title(); ?></a>
                 </h3>
                 <p class="meta-info"><?php echo neuro_categories() ?>, <?php echo get_the_date(); ?></p>
