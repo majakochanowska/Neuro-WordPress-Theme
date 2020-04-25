@@ -39,7 +39,7 @@
             <!--Section: Recent articles-->
             <section>
 
-                <h2 class="my-4"><?php _e('Najnowsze artykuły', 'neuro')?></h2>
+                <h2 class="my-4 main-heading"><?php _e('Najnowsze artykuły', 'neuro')?></h2>
 
                 <?php get_template_part( 'template-parts/posts-list' ); ?>
 
