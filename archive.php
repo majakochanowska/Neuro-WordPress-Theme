@@ -10,15 +10,15 @@
                 <h2 class="my-4">
                 <?php
                     if ( is_category() ) {
-                        single_cat_title( 'Kategoria: ' );
+                        single_cat_title( __( 'Kategoria: ', 'neuro' ) );
                     } elseif ( is_tag() ) {
-                        single_tag_title( 'Artykuły na temat: ' );
+                        single_tag_title( __( 'Artykuły na temat: ', 'neuro' ) );
                     } elseif ( is_author() ) {
                         the_post();
-                        echo 'Artykuły autora: ' . get_the_author();
+                        echo __('Artykuły autora: ', 'neuro') . get_the_author();
                         rewind_posts();
                     } else {
-                        echo 'Archiwum: ';
+                        echo __('Archiwum: ', 'neuro');
                     }
                     ?>
                 </h2>

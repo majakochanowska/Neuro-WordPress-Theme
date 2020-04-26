@@ -95,7 +95,7 @@
                 ) . ')</p>  ',
             'title_reply' => '',
             'class_submit' => 'btn btn-info btn-md ',
-            'label_submit' => 'Dodaj'
+            'label_submit' => __( 'Dodaj', 'neuro' )
 
         );
         ?>
