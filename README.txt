@@ -1,4 +1,4 @@
-WordPress Theme which will be used for website https://neuroskoki.pl
+WordPress Theme which will be used for website [neuroskoki.pl](https://neuroskoki.pl).
 
 # Features
 - Related articles by tag
@@ -20,8 +20,7 @@ The name of category "polecane" or "recommended" is not displayed in breadcrumbs
 
 The place is made for 4 articles. They display in 4 columns on desktop and in 2 columns on mobile. If you want to display different amount of posts, you have to manipulate properly Bootstrap ```col``` classes in ```index.php```.
 
-____
-
+___
 Material Design for Bootstrap
 Version: MDB FREE 4.15.0
 
@@ -46,4 +45,3 @@ https://mdbootstrap.com/forums/forum/support/
 
 Contact:
 office@mdbootstrap.com
-
