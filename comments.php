@@ -95,7 +95,9 @@
                 ) . ')</p>  ',
             'title_reply' => '',
             'class_submit' => 'btn btn-primary btn-rounded btn-md btn-add-comment',
-            'label_submit' => __( 'Dodaj', 'neuro' )
+            'label_submit' => __( 'Dodaj', 'neuro' ),
+            'title_reply_before' => '<div id="reply-title" class="comment-reply-title">',
+            'title_reply_after' => '</div>'
 
         );
         ?>
