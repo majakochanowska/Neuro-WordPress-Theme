@@ -78,7 +78,7 @@ function neuro_number_pagination() {
   ));
 
   $search = array('prev page-numbers', 'next page-numbers', 'page-numbers dots', 'page-numbers' );
-  $replace = array('btn btn-info btn-rounded btn-md waves-effect waves-light', 'btn btn-info btn-rounded btn-md waves-effect waves-light', 'badge badge-light pagination-num', 'btn btn-info btn-rounded waves-effect waves-light pagination-num' );
+  $replace = array('btn btn-primary btn-rounded btn-md waves-effect waves-light', 'btn btn-primary btn-rounded btn-md waves-effect waves-light', 'badge badge-light pagination-num', 'btn btn-primary btn-rounded waves-effect waves-light pagination-num' );
 
   echo str_replace( $search, $replace, $pagination);
 

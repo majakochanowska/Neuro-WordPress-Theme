@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: neuro\n"
 "Report-Msgid-Bugs-To: Translator Name <translations@example.com>\n"
-"POT-Creation-Date: 2020-04-26 19:37+0100\n"
+"POT-Creation-Date: 2020-05-02 15:39+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: Maja Kochanowska\n"
@@ -83,9 +83,17 @@ msgstr "Add"
 msgid "Dodaj komentarz"
 msgstr "Add comment"
 
+#: footer.php:4
+msgid "Do góry"
+msgstr "Up"
+
 #: functions.php:52
 msgid "Primary Menu"
 msgstr ""
+
+#: header.php:17
+msgid "Strona główna"
+msgstr "Home page"
 
 #: index.php:10
 msgid "Polecam w tym miesiącu"
@@ -101,6 +109,10 @@ msgstr "Search results for"
 
 #: searchform.php:2 searchform.php:3
 msgid "Wpisz czego szukasz"
+msgstr "Search"
+
+#: searchform.php:4
+msgid "Szukaj"
 msgstr "Search"
 
 #: single.php:39

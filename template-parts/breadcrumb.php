@@ -9,7 +9,7 @@
 
 ?>
 
-<ol class="breadcrumb white z-depth-1">
+<ol class="breadcrumb white z-depth-1 small">
     <li class="breadcrumb-item">
         <a href="<?php echo get_home_url(); ?>">Home</a>
     </li>

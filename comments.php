@@ -94,7 +94,7 @@
                     wp_logout_url( apply_filters( 'the_permalink', get_permalink( ) ) )
                 ) . ')</p>  ',
             'title_reply' => '',
-            'class_submit' => 'btn btn-info btn-md ',
+            'class_submit' => 'btn btn-primary btn-rounded btn-md btn-add-comment',
             'label_submit' => __( 'Dodaj', 'neuro' )
 
         );

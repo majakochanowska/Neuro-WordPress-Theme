@@ -14,6 +14,7 @@ html {
 h1 {
   font-family: 'Merriweather Sans', sans-serif;
   font-size: 1rem;
+  color: #008192;
 }
 
 h2 {
@@ -22,8 +23,10 @@ h2 {
 }
 
 h3 {
+  font-family: 'Merriweather Sans', sans-serif;
   font-size: 1.4rem;
   border-bottom: 1px solid #71b5fd;
+  padding-bottom: 3px;
   width: max-content;
 }
 
@@ -37,6 +40,21 @@ ul {
 
 strong {
   font-weight: bold;
+}
+
+a {
+  color: #0072ec;
+}
+
+.primary-color, .bg-primary, .btn-primary {
+  background-color: #266ee8 !important;
+}
+
+.navbar.navbar-dark .navbar-nav .nav-item.active>.nav-link,
+.navbar.navbar-dark .navbar-nav .nav-item .nav-link:hover {
+  background-color: #086ad4;
+  border-radius: 3px;
+  color: #fff;
 }
 
 .main-heading {
@@ -60,6 +78,7 @@ strong {
 
 .nav-link {
   letter-spacing: 0.02rem;
+  margin: 0 3px;
 }
 
 .post-thumbnail {
@@ -160,6 +179,11 @@ strong {
 
 .form-control {
   margin-bottom: 10px;
+}
+
+.btn-add-comment:hover {
+  box-shadow: none;
+  -webkit-box-shadow: none;
 }
 
 /**
