@@ -38,6 +38,21 @@ the_post();
 
                                 <p><?php _e('Autor', 'neuro')?>: <a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ), get_the_author_meta( 'user_nicename' ) ); ?>"><?php the_author(); ?></a></p>
 
+                                <div id="fb-root"></div>
+                                <script>(function(d, s, id) {
+                                    var js, fjs = d.getElementsByTagName(s)[0];
+                                    if (d.getElementById(id)) return;
+                                    js = d.createElement(s); js.id = id;
+                                    js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+                                    fjs.parentNode.insertBefore(js, fjs);
+                                }(document, 'script', 'facebook-jssdk'));</script>
+
+                                <div class="fb-share-button" 
+                                    data-href="<?php echo get_permalink() ?>" 
+                                    data-layout="button_count"
+                                    data-size="large"
+                                    >
+                                </div>
                         </div>
 
                         <?php 
