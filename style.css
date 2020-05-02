@@ -7,6 +7,10 @@ Author URI: https://github.com/majakochanowska
 Text Domain: neuro
 */
 
+html {
+  scroll-behavior: smooth;
+}
+
 h1 {
   font-family: 'Merriweather Sans', sans-serif;
   font-size: 1rem;
@@ -156,6 +160,33 @@ strong {
 
 .form-control {
   margin-bottom: 10px;
+}
+
+/**
+ * Scroll utilities
+ */
+
+.go-up {
+  margin-right: 20px;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #33b5e5;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #175b74;
+}
+
+::-webkit-scrollbar-track {
+  background: #afcfff;
 }
 
 @media (min-width: 576px) {
