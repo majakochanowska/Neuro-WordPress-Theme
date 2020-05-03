@@ -28,6 +28,7 @@ h3 {
   border-bottom: 1px solid #71b5fd;
   padding-bottom: 3px;
   width: max-content;
+  max-width: 100%;
 }
 
 h4 {
@@ -44,6 +45,11 @@ strong {
 
 a {
   color: #0072ec;
+}
+
+blockquote {
+  margin: 0 0 1rem 1.2rem;
+  font-style: italic;
 }
 
 .primary-color, .bg-primary, .btn-primary {
