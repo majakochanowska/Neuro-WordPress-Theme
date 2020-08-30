@@ -37,7 +37,7 @@
                     <a href="<?php echo get_permalink() ?>"><?php the_title(); ?></a>
                 </h3>
                 <p class="meta-info"><?php echo neuro_categories() ?>, <?php echo get_the_date(); ?></p>
-                <p class="grey-text"><?php the_excerpt(); ?></p>
+                <?php the_excerpt(); ?>
                 <a href="<?php echo get_permalink() ?>" class="btn btn-primary btn-rounded btn-md mb-3"><?php _e('Czytaj więcej', 'neuro')?></a>
             </div>
         </div>
