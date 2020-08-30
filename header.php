@@ -18,7 +18,7 @@
                 <div class="col-xs-10"><h1 class="font-weight-lighter ml-3"><?php bloginfo( 'description' )?></h1></div>
             </div> 
         </div>
-        <nav class="navbar navbar-expand-md navbar-dark primary-color" role="navigation">
+        <nav class="navbar navbar-expand-md navbar-dark primary-color">
             <div class="container">
 	            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-navbar-collapse-1" aria-controls="bs-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
 		            <span class="navbar-toggler-icon"></span>
