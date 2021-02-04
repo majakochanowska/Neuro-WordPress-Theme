@@ -1,4 +1,4 @@
-<?php  get_header(); ?>
+<?php get_header(); ?>
 
     <!--Main layout-->
     <main>
@@ -10,15 +10,15 @@
                 <h2 class="my-4">
                 <?php
                     if ( is_category() ) {
-                        single_cat_title( __( 'Kategoria: ', 'neuro' ) );
+                        single_cat_title( esc_html_e( 'Kategoria: ', 'neuro' ) );
                     } elseif ( is_tag() ) {
-                        single_tag_title( __( 'Artykuły na temat: ', 'neuro' ) );
+                        single_tag_title( esc_html_e( 'Artykuły na temat: ', 'neuro' ) );
                     } elseif ( is_author() ) {
                         the_post();
-                        echo __('Artykuły autora: ', 'neuro') . get_the_author();
+                        echo esc_html( __('Artykuły autora: ', 'neuro') ) . get_the_author();
                         rewind_posts();
                     } else {
-                        echo __('Archiwum: ', 'neuro');
+                        echo esc_html( __('Archiwum: ', 'neuro') );
                     }
                     ?>
                 </h2>
@@ -32,4 +32,4 @@
     </main>
     <!--Main layout-->
 
-<?php  get_footer(); ?>
+<?php get_footer(); ?>

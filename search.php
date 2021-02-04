@@ -1,4 +1,4 @@
-<?php  get_header(); ?>
+<?php get_header(); ?>
 
     <!--Main layout-->
     <main>
@@ -7,7 +7,7 @@
             <!--Section: Articles-->
             <section>
 
-                <h2 class="my-4"><?php _e('Wyniki wyszukiwania dla hasła', 'neuro')?>: "<?php the_search_query(); ?>"</h2>
+                <h2 class="my-4"><?php esc_html_e('Wyniki wyszukiwania dla hasła', 'neuro')?>: "<?php the_search_query(); ?>"</h2>
 
                 <?php get_template_part( 'template-parts/posts-list' ); ?>
 
@@ -19,4 +19,4 @@
     <!--Main layout-->
 
 
-<?php  get_footer(); ?>
+<?php get_footer(); ?>

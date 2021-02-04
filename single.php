@@ -36,7 +36,7 @@ the_post();
                                 <p class="meta-info"><?php echo get_the_date(); ?></p>
                                 <?php the_content(); ?>
 
-                                <p><?php _e('Autor', 'neuro')?>: <a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ), get_the_author_meta( 'user_nicename' ) ); ?>"><?php the_author(); ?></a></p>
+                                <p><?php esc_html_e('Autor', 'neuro')?>: <a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ), get_the_author_meta( 'user_nicename' ) ); ?>"><?php the_author(); ?></a></p>
 
                                 <div id="fb-root"></div>
                                 <script>(function(d, s, id) {
@@ -61,7 +61,7 @@ the_post();
                             if( $related->have_posts() ) {
                         ?>
                             
-                            <h4 class="bg-primary text-white related-header"><?php _e('Może cię też zainteresować', 'neuro')?></h4>
+                            <h4 class="bg-primary text-white related-header"><?php esc_html_e('Może cię też zainteresować', 'neuro')?></h4>
                             <div class="card-body">
                                 
                                 <div class="row">

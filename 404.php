@@ -1,4 +1,4 @@
-<?php  get_header(); ?>
+<?php get_header(); ?>
 
 <!--Main layout-->
 <main>
@@ -18,7 +18,7 @@
 
                         <!--Card content-->
                         <div class="card-body">
-                            <h2 class="mb-4 text-center"><?php _e('Nie ma takiej strony.', 'neuro')?></h2>
+                            <h2 class="mb-4 text-center"><?php esc_html_e('Nie ma takiej strony.', 'neuro')?></h2>
                             <p class="error">404 error</p>
                         </div>
 

@@ -1,4 +1,4 @@
-<?php  get_header(); ?>
+<?php get_header(); ?>
 
     <!--Main layout-->
     <main>
@@ -7,7 +7,7 @@
             <!--Section: Recommended articles-->
             <section>
 
-                <h2 class="my-4 main-heading"><?php _e('Polecam w tym miesiącu', 'neuro')?></h2>
+                <h2 class="my-4 main-heading"><?php esc_html_e('Polecam w tym miesiącu', 'neuro')?></h2>
 
                 <div class="row rounded z-depth-2">
 
@@ -39,7 +39,7 @@
             <!--Section: Recent articles-->
             <section>
 
-                <h2 class="my-4 main-heading"><?php _e('Najnowsze artykuły', 'neuro')?></h2>
+                <h2 class="my-4 main-heading"><?php esc_html_e('Najnowsze artykuły', 'neuro')?></h2>
 
                 <?php get_template_part( 'template-parts/posts-list' ); ?>
 
@@ -51,4 +51,4 @@
     <!--Main layout-->
 
 
-<?php  get_footer(); ?>
+<?php get_footer(); ?>

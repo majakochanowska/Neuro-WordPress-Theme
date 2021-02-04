@@ -25,7 +25,7 @@
         <?php if ( have_comments() ) : ?>
 
             <div class="card mb-3">
-                <h4 class="card-header"><?php _e('Komentarze', 'neuro')?></h4>
+                <h4 class="card-header"><?php esc_html_e('Komentarze', 'neuro')?></h4>
 
                 <div class="card-body">
                     <?php
@@ -47,17 +47,17 @@
         'fields' => apply_filters(
             'comment_form_default_fields', array(
                 'author' =>'
-                <label for="author">'. __( 'Imię', 'neuro' ) . '<span class="required">*</span>'  .' </label>
+                <label for="author">'. esc_html( __( 'Imię', 'neuro' ) ) . '<span class="required">*</span>'  .' </label>
                 <input type="text" id="author" name="author" class="form-control" required>
                 ',
 
                 'email'  => '
-                <label for="email">'. __( 'Email', 'neuro' ) . '<span class="required">*</span>' . '</label>
+                <label for="email">'. esc_html( __( 'Email', 'neuro' ) ) . '<span class="required">*</span>' . '</label>
                 <input type="email" id="email" name="email" class="form-control" required>
                 ',
 
                 'url'  => '
-                <label for="url">'. __( 'Strona www', 'neuro' ) .  '</label>
+                <label for="url">'. esc_html( __( 'Strona www', 'neuro' ) ) .  '</label>
                 <input type="text" id="url" name="url" class="form-control">
                 '
             )
@@ -70,7 +70,7 @@
                     <div class="col-sm-10 col-12">
 
                         <div class="form-group">
-                            <label for="comment">' . __( 'Twój komentarz', 'neuro' ) . '</label>
+                            <label for="comment">' . esc_html( __( 'Twój komentarz', 'neuro' ) ) . '</label>
                             <textarea id="comment" name="comment" type="text"  class="form-control" rows="5"></textarea>
                         </div>
 
@@ -82,7 +82,7 @@
                 <!--/.Third row-->': '
                 <!-- Comment -->
                 <div class="form-group">
-                    <label for="comment">' . __( 'Twój komentarz', 'neuro' ) . '</label>
+                    <label for="comment">' . esc_html( __( 'Twój komentarz', 'neuro' ) ) . '</label>
                     <textarea id="comment" name="comment" type="text" class="form-control" rows="5"></textarea>
                 </div>'),
             'comment_notes_after' => '',
@@ -103,7 +103,7 @@
         ?>
         <!--Leave a reply section-->
         <div class="card mb-3">
-            <h4 class="card-header"><?php _e('Dodaj komentarz', 'neuro')?></h4>
+            <h4 class="card-header"><?php esc_html_e('Dodaj komentarz', 'neuro')?></h4>
             <div class="card-body">
 
                 <?php comment_form($args ); ?>
