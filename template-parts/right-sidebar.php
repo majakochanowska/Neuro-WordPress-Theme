@@ -7,6 +7,10 @@
  * @since 1.0.0
  */
 
+if ( ! defined( 'ABSPATH' ) ) {
+    exit;
+}
+
 ?>
 
 <div class="col-lg-3 mb-4">
