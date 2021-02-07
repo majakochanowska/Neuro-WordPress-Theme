@@ -1,4 +1,11 @@
-<?php  get_header();
+<?php 
+
+if ( ! defined( 'ABSPATH' ) ) {
+    exit;
+}
+
+get_header();
+
 if ( have_posts() ) {
 while ( have_posts() ) {
 the_post();
@@ -26,17 +33,17 @@ the_post();
 
                         <!--Card content-->
                         <div class="card-body">
-                            <h2 class="mb-4"><?php the_title() ?></h2>
+                            <h2 class="mb-4"><?php esc_html( the_title() ); ?></h2>
                             <div class="d-sm-block d-md-none">
                                 <?php the_post_thumbnail( 'medium-xl', array( 'class'=> 'img-fluid z-depth-1 mb-3 mr-3 post-thumbnail')); ?>
                             </div>
                             <div class="d-none d-md-block">
                                 <?php the_post_thumbnail( 'medium', array( 'class'=> 'img-fluid z-depth-1 mr-3 post-thumbnail')); ?>
                             </div>
-                                <p class="meta-info"><?php echo get_the_date(); ?></p>
-                                <?php the_content(); ?>
+                                <p class="meta-info"><?php echo esc_html( get_the_date() ); ?></p>
+                                <?php esc_html( the_content() ); ?>
 
-                                <p><?php esc_html_e('Autor', 'neuro')?>: <a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ), get_the_author_meta( 'user_nicename' ) ); ?>"><?php the_author(); ?></a></p>
+                                <p><?php esc_html_e('Autor', 'neuro')?>: <a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ), get_the_author_meta( 'user_nicename' ) ) ); ?>"><?php the_author(); ?></a></p>
 
                                 <div id="fb-root"></div>
                                 <script>(function(d, s, id) {
@@ -48,7 +55,7 @@ the_post();
                                 }(document, 'script', 'facebook-jssdk'));</script>
 
                                 <div class="fb-share-button" 
-                                    data-href="<?php echo get_permalink() ?>" 
+                                    data-href="<?php echo esc_attr( get_permalink() ); ?>" 
                                     data-layout="button_count"
                                     data-size="large"
                                     >
@@ -67,8 +74,8 @@ the_post();
                                 <div class="row">
                                     <?php while( $related->have_posts() ): $related->the_post(); ?>
                                     <div class="col-md-3 col-6">
-                                        <div><a href="<?php echo get_permalink() ?>"><?php the_post_thumbnail( 'medium', array( 'class'=> 'img-fluid mb-1 post-thumbnail related-thumbnail')); ?></a></div>
-                                        <h5 class="related-title"><a href="<?php echo get_permalink() ?>"><?php the_title(); ?></a></h5>
+                                        <div><a href="<?php echo esc_url( get_permalink() ); ?>"><?php the_post_thumbnail( 'medium', array( 'class'=> 'img-fluid mb-1 post-thumbnail related-thumbnail')); ?></a></div>
+                                        <h5 class="related-title"><a href="<?php echo esc_url( get_permalink() ); ?>"><?php esc_html( the_title() ); ?></a></h5>
                                     </div>
                                     <?php endwhile; ?>
                                 </div>

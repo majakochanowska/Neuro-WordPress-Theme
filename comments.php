@@ -8,6 +8,11 @@
  * @subpackage neuro
  * @since neuro 1.0
  */
+
+if ( ! defined( 'ABSPATH' ) ) {
+    exit;
+}
+
 ?>
 
     <?php

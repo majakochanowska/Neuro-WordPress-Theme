@@ -1,4 +1,10 @@
-<?php get_header(); ?>
+<?php 
+
+if ( ! defined( 'ABSPATH' ) ) {
+    exit;
+}
+
+get_header(); ?>
 
     <!--Main layout-->
     <main>
@@ -21,9 +27,9 @@
                     <div class="my-3">
                         <?php the_post_thumbnail( 'medium-xl', array( 'class'=> 'img-fluid z-depth-1')); ?>
                     </div>
-                    <p class="meta-info"><?php echo neuro_categories() ?>, <?php echo get_the_date(); ?></p>
+                    <p class="meta-info"><?php echo esc_html( neuro_categories() ); ?>, <?php echo esc_html( get_the_date() ); ?></p>
                     <h3 class="my-3 recommended-title">
-                        <a href="<?php echo get_permalink() ?>"><?php the_title(); ?></a>
+                        <a href="<?php echo esc_url( get_permalink() ); ?>"><?php esc_html( the_title() ); ?></a>
                     </h3>
                 </div>
 

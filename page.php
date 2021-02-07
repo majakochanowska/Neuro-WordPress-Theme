@@ -1,4 +1,11 @@
-<?php  get_header();
+<?php  
+
+if ( ! defined( 'ABSPATH' ) ) {
+    exit;
+}
+
+get_header();
+
 if ( have_posts() ) {
 while ( have_posts() ) {
 the_post();
@@ -26,10 +33,10 @@ the_post();
 
                         <!--Card content-->
                         <div class="card-body">
-                            <h2 class="mb-4"><?php the_title() ?></h2>
+                            <h2 class="mb-4"><?php esc_html( the_title() ); ?></h2>
 
                             <div class="post-content">
-                            <?php the_content(); ?>
+                                <?php esc_html( the_content() ); ?>
                             </div>
 
                         </div>
