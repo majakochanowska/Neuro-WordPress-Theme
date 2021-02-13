@@ -25,7 +25,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         return;
 ?>
 
-<div id="comments" class="">
+<div id="comments">
 
         <?php if ( have_comments() ) : ?>
 
@@ -33,12 +33,14 @@ if ( ! defined( 'ABSPATH' ) ) {
                 <h4 class="card-header"><?php esc_html_e('Komentarze', 'neuro')?></h4>
 
                 <div class="card-body">
+                    <ul class="comments-list">
                     <?php
                         wp_list_comments( array( 
                             'max-depth' => '3',
                             'type' => 'comment'
                         ) );
                     ?>
+                    </ul>
                 </div>
                         
             </div>
@@ -76,7 +78,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
                         <div class="form-group">
                             <label for="comment">' . esc_html( __( 'Twój komentarz', 'neuro' ) ) . '</label>
-                            <textarea id="comment" name="comment" type="text"  class="form-control" rows="5"></textarea>
+                            <textarea id="comment" name="comment" class="form-control" rows="5"></textarea>
                         </div>
 
 
@@ -88,7 +90,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                 <!-- Comment -->
                 <div class="form-group">
                     <label for="comment">' . esc_html( __( 'Twój komentarz', 'neuro' ) ) . '</label>
-                    <textarea id="comment" name="comment" type="text" class="form-control" rows="5"></textarea>
+                    <textarea id="comment" name="comment" class="form-control" rows="5"></textarea>
                 </div>'),
             'comment_notes_after' => '',
             'comment_notes_before' => '',
