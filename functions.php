@@ -128,7 +128,7 @@ function neuro_categories() {
         
   if ( $categories ) {
       foreach ( $categories as $category ) {
-          if ($category->term_id != 599 && $category->term_id != 601) {
+          if ($category->cat_name != 'Polecane' && $category->cat_name != 'Recommended') {
               $output .= '<a href="' . get_category_link( $category->term_id ) . '">' . $category->cat_name . '</a>' . $separator;
           }
       }
@@ -146,4 +146,5 @@ function neuro_load_theme_textdomain() {
 add_action( 'after_setup_theme', 'neuro_load_theme_textdomain' );
 
 ?>
+
 
