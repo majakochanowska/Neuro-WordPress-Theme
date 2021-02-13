@@ -40,26 +40,33 @@ the_post();
                             <div class="d-none d-md-block">
                                 <?php the_post_thumbnail( 'medium', array( 'class'=> 'img-fluid z-depth-1 mr-3 post-thumbnail')); ?>
                             </div>
-                                <p class="meta-info"><?php echo esc_html( get_the_date() ); ?></p>
-                                <?php esc_html( the_content() ); ?>
+                            <p class="meta-info"><?php esc_html_e('Opublikowany:', 'neuro')?> <?php echo esc_html( get_the_date() ); ?></p>
+                            <?php 
+                                if ( get_the_modified_time( 'U' ) >= get_the_time( 'U' ) + DAY_IN_SECONDS ) {
+                            ?>
+                            <p class="update-info"><?php esc_html_e('Ostatnio aktualizowany:', 'neuro')?> <?php echo esc_html( the_modified_date() ); ?></p>
+                            <?php
+                                }
+                            ?>
+                            <?php esc_html( the_content() ); ?>
 
-                                <p><?php esc_html_e('Autor', 'neuro')?>: <a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ), get_the_author_meta( 'user_nicename' ) ) ); ?>"><?php the_author(); ?></a></p>
+                            <p><?php esc_html_e('Autor', 'neuro')?>: <a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ), get_the_author_meta( 'user_nicename' ) ) ); ?>"><?php the_author(); ?></a></p>
 
-                                <div id="fb-root"></div>
-                                <script>(function(d, s, id) {
-                                    var js, fjs = d.getElementsByTagName(s)[0];
-                                    if (d.getElementById(id)) return;
-                                    js = d.createElement(s); js.id = id;
-                                    js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
-                                    fjs.parentNode.insertBefore(js, fjs);
-                                }(document, 'script', 'facebook-jssdk'));</script>
+                            <div id="fb-root"></div>
+                            <script>(function(d, s, id) {
+                                var js, fjs = d.getElementsByTagName(s)[0];
+                                if (d.getElementById(id)) return;
+                                js = d.createElement(s); js.id = id;
+                                js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+                                fjs.parentNode.insertBefore(js, fjs);
+                            }(document, 'script', 'facebook-jssdk'));</script>
 
-                                <div class="fb-share-button" 
-                                    data-href="<?php echo esc_attr( get_permalink() ); ?>" 
-                                    data-layout="button_count"
-                                    data-size="large"
-                                    >
-                                </div>
+                            <div class="fb-share-button" 
+                                data-href="<?php echo esc_attr( get_permalink() ); ?>" 
+                                data-layout="button_count"
+                                data-size="large"
+                                >
+                            </div>
                         </div>
 
                         <?php 

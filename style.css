@@ -1,7 +1,7 @@
 /*
 Theme Name: neuroskoki
 Theme URI: https://neuroskoki.pl
-Version: 1.0.0.
+Version: 1.1.0.
 Author: Maja Kochanowska
 Author URI: https://github.com/majakochanowska
 Text Domain: neuro
@@ -77,9 +77,13 @@ blockquote {
   font-size: 1.25rem;
 }
 
-.meta-info {
+.meta-info, .update-info {
   font-size: 0.85rem;
   font-style: italic;
+}
+
+.update-info {
+  margin-top: -1rem;
 }
 
 .nav-link {
