@@ -24,7 +24,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         
         if ( $categories ) {
             foreach ( $categories as $category ) {
-                if ($category->term_id != 599 && $category->term_id != 601) {
+                if ($category->cat_name != 'Polecane' && $category->cat_name != 'Recommended') {
                     $output .= '<li class="breadcrumb-item"><a href="' . esc_url( get_category_link( $category->term_id ) ) . '">' . $category->cat_name . '</a></li>' . $separator;
                 }
             }
