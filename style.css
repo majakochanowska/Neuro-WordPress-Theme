@@ -1,7 +1,7 @@
 /*
 Theme Name: neuroskoki
 Theme URI: https://neuroskoki.pl
-Version: 1.1.1.
+Version: 1.2.1
 Author: Maja Kochanowska
 Author URI: https://github.com/majakochanowska
 Text Domain: neuro
@@ -250,6 +250,29 @@ blockquote {
     max-width: 1180px;
   }
 }
+
+/**
+ * Gutenberg block
+ */
+
+.wp-block-neuro-references-block {
+  background-color: #deedfb;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  font-size: 90%;
+}
+
+.wp-block-neuro-references-block p,
+.wp-block-neuro-references-block ol,
+.wp-block-neuro-references-block ul {
+  margin-bottom: 2px;
+}
+
+
+/**
+ * Other
+ */
 
 /* Don't show border in IE, because it doesn't understand "max-content" */
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {

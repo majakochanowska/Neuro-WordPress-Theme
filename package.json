@@ -1,0 +1,15 @@
+{
+  "name": "neuroskoki",
+  "version": "1.0.0",
+  "description": "neuroskoki",
+  "main": "build/index.js",
+  "scripts": {
+    "start": "wp-scripts start",
+    "build": "wp-scripts build"
+  },
+  "author": "Maja Kochanowska",
+  "license": "GPL-2.0-only",
+  "devDependencies": {
+    "@wordpress/scripts": "14.1.0"
+  }
+}
