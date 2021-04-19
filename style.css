@@ -1,7 +1,7 @@
 /*
 Theme Name: neuroskoki
 Theme URI: https://neuroskoki.pl
-Version: 1.2.1
+Version: 1.2.3
 Author: Maja Kochanowska
 Author URI: https://github.com/majakochanowska
 Text Domain: neuro
@@ -23,16 +23,20 @@ h2 {
 }
 
 h3 {
-  font-family: 'Merriweather Sans', sans-serif;
   font-size: 1.4rem;
-  border-bottom: 1px solid #71b5fd;
-  padding-bottom: 3px;
-  width: max-content;
-  max-width: 100%;
 }
 
 h4 {
   font-size: 1.15rem;
+}
+
+h3,
+.card-body h4:not(.wp-block-neuro-references-block h4) {
+  font-family: 'Merriweather Sans', sans-serif;
+  border-bottom: 1px solid #71b5fd;
+  padding-bottom: 3px;
+  width: max-content;
+  max-width: 100%;
 }
 
 ul {
