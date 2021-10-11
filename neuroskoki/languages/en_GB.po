@@ -1,0 +1,145 @@
+# Blank WordPress Pot
+# Copyright 2014 ...
+# This file is distributed under the GNU General Public License v3 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: neuro\n"
+"Report-Msgid-Bugs-To: Translator Name <translations@example.com>\n"
+"POT-Creation-Date: 2021-02-13 20:15+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: Maja Kochanowska\n"
+"Language: en_GB\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Textdomain-Support: yesX-Generator: Poedit 1.6.4\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;esc_html_e;esc_html_x:1,2c;esc_html__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_attr__;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;"
+"_x:1,2c;_n:1,2;_n_noop:1,2;__ngettext:1,2;__ngettext_noop:1,2;_c,"
+"_nc:4c,1,2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Generator: Poedit 2.4.2\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:27
+msgid "Nie ma takiej strony."
+msgstr "Page not found."
+
+#: archive.php:19
+msgid "Kategoria: "
+msgstr "Category: "
+
+#: archive.php:21
+msgid "Artykuły na temat: "
+msgstr "Articles about: "
+
+#: archive.php:24
+msgid "Artykuły autora: "
+msgstr "Articles of: "
+
+#: archive.php:27
+msgid "Archiwum: "
+msgstr "Archive: "
+
+#: class-wp-bootstrap-navwalker.php:365
+msgid "Add a menu"
+msgstr ""
+
+#: comments.php:33
+msgid "Komentarze"
+msgstr "Comments"
+
+#: comments.php:55
+msgid "Imię"
+msgstr "Name"
+
+#: comments.php:60
+msgid "Email"
+msgstr "Email"
+
+#: comments.php:65
+msgid "Strona www"
+msgstr "Website"
+
+#: comments.php:78 comments.php:90
+msgid "Twój komentarz"
+msgstr "Your comment"
+
+#: comments.php:96
+#, php-format
+msgid ""
+"Zalogowany jako <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Wyloguj"
+"\">Wyloguj</a>"
+msgstr ""
+"Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Logout"
+"\">Log out</a>"
+
+#: comments.php:103
+msgid "Dodaj"
+msgstr "Add"
+
+#: comments.php:111
+msgid "Dodaj komentarz"
+msgstr "Add comment"
+
+#: footer.php:10
+msgid "Do góry"
+msgstr "Up"
+
+#: functions.php:56
+msgid "Primary Menu"
+msgstr ""
+
+#: header.php:23
+msgid "Strona główna"
+msgstr "Home page"
+
+#: index.php:16
+msgid "Polecam w tym miesiącu"
+msgstr "Recommended in this month"
+
+#: index.php:48
+msgid "Najnowsze artykuły"
+msgstr "Newest posts"
+
+#: js/mdb.js:1014 js/mdb.min.js:25
+msgid "hidden"
+msgstr ""
+
+#: search.php:16
+msgid "Wyniki wyszukiwania dla hasła"
+msgstr "Search results for"
+
+#: searchform.php:8 searchform.php:9
+msgid "Wpisz czego szukasz"
+msgstr "Search"
+
+#: searchform.php:10
+msgid "Szukaj"
+msgstr "Search"
+
+#: single.php:43
+msgid "Opublikowany:"
+msgstr "Published:"
+
+#: single.php:47
+msgid "Ostatnio aktualizowany:"
+msgstr "Last modified:"
+
+#: single.php:53
+msgid "Autor"
+msgstr "Author"
+
+#: single.php:78
+msgid "Może cię też zainteresować"
+msgstr "You may also like"
+
+#: template-parts/posts-list.php:45
+msgid "Czytaj więcej"
+msgstr "Read more"
+
+#: src/index.js:6 src/index.js:16 src/index.js:25
+msgid "Bibliografia"
+msgstr "References"

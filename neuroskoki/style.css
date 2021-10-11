@@ -1,0 +1,286 @@
+/*
+Theme Name: neuroskoki
+Theme URI: https://neuroskoki.pl
+Version: 1.2.3
+Author: Maja Kochanowska
+Author URI: https://github.com/majakochanowska
+Text Domain: neuro
+*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 1rem;
+  color: #008192;
+}
+
+h2 {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+h4 {
+  font-size: 1.15rem;
+}
+
+h3,
+.card-body h4:not(.wp-block-neuro-references-block h4) {
+  font-family: 'Merriweather Sans', sans-serif;
+  border-bottom: 1px solid #71b5fd;
+  padding-bottom: 3px;
+  width: max-content;
+  max-width: 100%;
+}
+
+ul {
+  padding-left: 25px;
+}
+
+strong {
+  font-weight: bold;
+}
+
+a {
+  color: #0072ec;
+}
+
+blockquote {
+  margin: 0 0 1rem 1.2rem;
+  font-style: italic;
+}
+
+.primary-color, .bg-primary, .btn-primary {
+  background-color: #266ee8 !important;
+}
+
+.navbar.navbar-dark .navbar-nav .nav-item.active>.nav-link,
+.navbar.navbar-dark .navbar-nav .nav-item .nav-link:hover {
+  background-color: #086ad4;
+  border-radius: 3px;
+  color: #fff;
+}
+
+.main-heading {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+
+.recommended-title, .newest-title {
+  border-bottom: none;
+  width: auto;
+}
+
+.recommended-title {
+  font-size: 1.25rem;
+}
+
+.meta-info, .update-info {
+  font-size: 0.85rem;
+  font-style: italic;
+}
+
+.update-info {
+  margin-top: -1rem;
+}
+
+.nav-link {
+  letter-spacing: 0.02rem;
+  margin: 0 3px;
+}
+
+.post-thumbnail {
+  float: left;
+}
+
+.error {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 4rem;
+  text-align: center;
+}
+
+/**
+ * Search form
+ */
+
+.btn-search {
+  border: 0;
+}
+
+#searchform > .form-control {
+  margin-bottom: 0;
+}
+
+/**
+ * Related articles
+ */
+
+.related-header {
+  padding: 0.4rem 1.25rem;
+  font-size: 1.2rem;
+}
+
+.related-title {
+  font-size: 0.95rem;
+}
+
+.related-thumbnail {
+  -webkit-box-shadow: 1px 1px 2px 2px rgba(196, 196, 196, 0.35);
+  -moz-box-shadow: 1px 1px 2px 2px rgba(196, 196, 196, 0.35);
+  box-shadow: 1px 1px 2px 2px rgba(196, 196, 196, 0.35);
+  border-radius: 2px;
+}
+
+/**
+ * Sidebar
+ */
+
+.lang-item {
+  list-style-type: none;
+}
+
+.lang-item-first {
+  margin-top: 1rem;
+}
+
+#recentcomments {
+  list-style-type: circle;
+  font-size: 0.95rem;
+  margin-right: 10px;
+}
+
+/**
+ * Pagination
+ */
+
+.pagination-num {
+  padding: 0.6rem;
+  font-size: 0.6rem;
+}
+
+.current {
+  background-color: #14799e !important;
+}
+
+/**
+ * Comments
+ */
+
+.comment {
+  list-style-type: none;
+}
+
+.comments-list {
+  padding-left: 0;
+}
+
+.comment-meta {
+  font-size: 0.85rem;
+}
+
+.reply {
+  margin-bottom: 10px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #e9e9e9;
+}
+
+.fn {
+  font-style: normal;
+  font-weight: bold;
+}
+
+.form-control {
+  margin-bottom: 10px;
+}
+
+.btn-add-comment:hover {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+/**
+ * Scroll utilities
+ */
+
+.go-up {
+  margin-right: 20px;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #33b5e5;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #175b74;
+}
+
+::-webkit-scrollbar-track {
+  background: #afcfff;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 556px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 748px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 972px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1180px;
+  }
+}
+
+/**
+ * Gutenberg block
+ */
+
+.wp-block-neuro-references-block {
+  background-color: #deedfb;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  font-size: 90%;
+}
+
+.wp-block-neuro-references-block p,
+.wp-block-neuro-references-block ol,
+.wp-block-neuro-references-block ul {
+  margin-bottom: 2px;
+}
+
+
+/**
+ * Other
+ */
+
+/* Don't show border in IE, because it doesn't understand "max-content" */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	h3 { 
+    border-bottom: none; 
+  }
+}
