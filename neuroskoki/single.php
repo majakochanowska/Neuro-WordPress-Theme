@@ -68,7 +68,6 @@ the_post();
                                 >
                             </div>
 
-                            <a href="https://buycoffee.to/neuroskoki" target="_blank" rel="noopener"><img src="https://buycoffee.to/btn/buycoffeeto-btn-primary.svg" style="width: 140px;margin-left:15px;margin-bottom:5px" alt="Postaw mi kawę na buycoffee.to"></a>
                         </div>
 
                         <?php 
