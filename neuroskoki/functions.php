@@ -13,6 +13,7 @@ function neuro_enqueue_scripts() {
   wp_enqueue_style( 'MDB', get_template_directory_uri() . '/css/mdb.min.css' );
   wp_enqueue_style( 'Googlefonts', 'https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap' );
   wp_enqueue_style( 'Style', get_template_directory_uri() . '/style.css', array(), '1.2.3' );
+  wp_enqueue_script( 'script', get_template_directory_uri() . '/js/menu.js', array(), '1.2.3' );
 }
 add_action( 'wp_enqueue_scripts', 'neuro_enqueue_scripts' );
 
