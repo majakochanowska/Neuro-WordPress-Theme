@@ -11,18 +11,16 @@ html {
   scroll-behavior: smooth;
 }
 
-h1 {
-  font-family: 'Merriweather Sans', sans-serif;
-  font-size: 1rem;
-  color: #008192;
-}
-
-h2 {
+h2,
+.single h1,
+.page h1 {
   font-family: 'Merriweather Sans', sans-serif;
   font-size: 1.5rem;
 }
 
-h3 {
+h3,
+.single h2,
+.page h2 {
   font-size: 1.4rem;
 }
 
@@ -30,8 +28,16 @@ h4 {
   font-size: 1.15rem;
 }
 
-h3,
-.card-body h4:not(.wp-block-neuro-references-block h4) {
+h3 {
+  font-family: 'Merriweather Sans', sans-serif;
+  padding-bottom: 3px;
+  max-width: 100%;
+}
+
+.single h2,
+.page h2,
+.card-body h4:not(.wp-block-neuro-references-block h4),
+.card-body h3:not(.wp-block-neuro-references-block h3) {
   font-family: 'Merriweather Sans', sans-serif;
   border-bottom: 1px solid #71b5fd;
   padding-bottom: 3px;
@@ -103,6 +109,17 @@ blockquote {
   font-family: 'Merriweather Sans', sans-serif;
   font-size: 4rem;
   text-align: center;
+}
+
+/**
+ * Header
+ */
+
+.site-header h1,
+.site-header .h1 {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 1rem;
+  color: #008192;
 }
 
 /**
@@ -265,6 +282,10 @@ blockquote {
   border-radius: 5px;
   margin-bottom: 15px;
   font-size: 90%;
+}
+
+.wp-block-neuro-references-block h3 {
+  font-size: 1.15rem;
 }
 
 .wp-block-neuro-references-block p,

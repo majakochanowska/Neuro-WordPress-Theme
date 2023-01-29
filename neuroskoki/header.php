@@ -21,7 +21,13 @@ if ( ! defined( 'ABSPATH' ) ) {
         <div class="container">
             <div class="row align-items-center my-2">
                 <div class="col-xs-2 ml-1"><?php the_custom_logo() ?></div>
-                <div class="col-xs-10"><h1 class="font-weight-lighter ml-3"><?php esc_html( bloginfo( 'description' ) ); ?></h1></div>
+                <div class="col-xs-10">
+                    <?php if ( ! is_singular() ) { ; ?>
+                    <h1 class="font-weight-lighter ml-3"><?php esc_html( bloginfo( 'description' ) ); ?></h1>
+                    <?php } else { ?>
+                    <p class="font-weight-lighter ml-3 h1"><?php esc_html( bloginfo( 'description' ) ); ?></p>
+                    <?php } ?>
+                </div>
             </div> 
         </div>
         <nav class="navbar navbar-expand-md navbar-dark primary-color">
