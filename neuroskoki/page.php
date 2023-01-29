@@ -33,7 +33,7 @@ the_post();
 
                         <!--Card content-->
                         <div class="card-body">
-                            <h2 class="mb-4"><?php esc_html( the_title() ); ?></h2>
+                            <h1 class="mb-4"><?php esc_html( the_title() ); ?></h1>
 
                             <div class="post-content">
                                 <?php esc_html( the_content() ); ?>

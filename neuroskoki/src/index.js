@@ -13,7 +13,7 @@ registerBlockType( 'neuro/references-block', {
 
 		return (
 			<div className={ props.className }>
-				<h4>{ __( 'Bibliografia', 'neuro' ) }</h4>
+				<h3>{ __( 'Bibliografia', 'neuro' ) }</h3>
 				<InnerBlocks allowedBlocks={ ALLOWED_BLOCKS } />
 			</div>
 		);
@@ -22,7 +22,7 @@ registerBlockType( 'neuro/references-block', {
 		
 		return (
 			<div className={ props.className }>
-				<h4>{ __( 'Bibliografia', 'neuro' ) }</h4>
+				<h3>{ __( 'Bibliografia', 'neuro' ) }</h3>
 				<InnerBlocks.Content />
 			</div>
 		);

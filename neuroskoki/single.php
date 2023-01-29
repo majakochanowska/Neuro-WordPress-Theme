@@ -33,7 +33,7 @@ the_post();
 
                         <!--Card content-->
                         <div class="card-body">
-                            <h2 class="mb-4"><?php esc_html( the_title() ); ?></h2>
+                            <h1 class="mb-4"><?php esc_html( the_title() ); ?></h1>
                             <div class="d-sm-block d-md-none">
                                 <?php the_post_thumbnail( 'medium-xl', array( 'class'=> 'img-fluid z-depth-1 mb-3 mr-3 post-thumbnail')); ?>
                             </div>
