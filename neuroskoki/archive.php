@@ -16,7 +16,7 @@ get_header(); ?>
                 <h2 class="my-4">
                 <?php
                     if ( is_category() ) {
-                        single_cat_title( esc_html_e( 'Kategoria: ', 'neuro' ) );
+                        single_cat_title( esc_html_e( 'Dziedzina: ', 'neuro' ) );
                     } elseif ( is_tag() ) {
                         single_tag_title( esc_html_e( 'Artykuły na temat: ', 'neuro' ) );
                     } elseif ( is_author() ) {
