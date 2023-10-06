@@ -40,7 +40,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                 <h3 class="my-3 newest-title">
                     <a href="<?php echo esc_url( get_permalink() ); ?>"><?php esc_html( the_title() ); ?></a>
                 </h3>
-                <p class="meta-info"><?php echo neuro_categories(); ?><?php echo esc_html( get_the_date() ); echo get_the_author() === "artykuł sponsorowany" ? '<span class="ml-3 mdb-color-ic">' . esc_html( get_the_author() ) . '</span>' : ''; ?></p>
+                <p class="meta-info"><?php echo neuro_categories(); ?>, <?php echo esc_html( get_the_date() ); echo get_the_author() === "artykuł sponsorowany" ? '<span class="ml-3 mdb-color-ic">' . esc_html( get_the_author() ) . '</span>' : ''; ?></p>
                 <?php esc_html( the_excerpt() ); ?>
                 <a href="<?php echo esc_url( get_permalink() ); ?>" class="btn btn-primary btn-rounded btn-md mb-3"><?php esc_html_e('Czytaj więcej', 'neuro')?></a>
             </div>

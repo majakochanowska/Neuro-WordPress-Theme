@@ -119,16 +119,15 @@ function neuro_get_related_posts( $post_id, $related_count, $args = array() ) {
 
 function neuro_categories() {
   $categories = get_the_category();
-  $output = '';
+  $separator = ', ';
         
   if ( $categories ) {
       foreach ( $categories as $category ) {
           if ($category->cat_name != 'Polecane' && $category->cat_name != 'Recommended') {
-              $output .= '<a href="' . get_category_link( $category->term_id ) . '">' . $category->cat_name . '</a>, ';
+              $output .= '<a href="' . get_category_link( $category->term_id ) . '">' . $category->cat_name . '</a>' . $separator;
           }
       }
-
-      echo $output;
+      echo trim( $output, $separator );
   }
 }
 
