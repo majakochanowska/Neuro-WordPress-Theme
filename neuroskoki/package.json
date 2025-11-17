@@ -10,6 +10,6 @@
   "author": "Maja Kochanowska",
   "license": "GPL-2.0-only",
   "devDependencies": {
-    "@wordpress/scripts": "14.1.0"
+    "@wordpress/scripts": "31.0.0"
   }
 }
